@@ -38,6 +38,7 @@ values."
      ;; ----------------------------------------------------------------
      customfont
      open-color
+     utils
      tabbar
      helm
      auto-completion
