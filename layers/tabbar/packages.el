@@ -93,6 +93,7 @@ That is, a string used to represent it on the tab bar."
        (cond
         ((string-equal "*" (substring (buffer-name) 0 1)) "emacs")
         ((eq major-mode 'emacs-lisp-byte-code-mode) "emacs")
+        ((eq major-mode 'emacs-lisp-mode) "emacs")
         ((eq major-mode 'dired-mode) "dired")
         ((eq major-mode 'html-mode) "web")
         ((eq major-mode 'css-mode) "web")
@@ -102,6 +103,8 @@ That is, a string used to represent it on the tab bar."
         ((eq major-mode 'js-mode) "web")
         ((eq major-mode 'js2-mode) "web")
         ((eq major-mode 'rust-mode) "rust")
+        ((eq major-mode 'text-mode) "text")
+        ((eq major-mode 'markdown-mode) "text")
         (t "others")))
       )
     )
