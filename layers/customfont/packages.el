@@ -59,19 +59,38 @@ Each entry is either:
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
 (defun customfont/init-customfont ()
-  ;;Hangul fallback - Noto Sans CJK KR
   ;;TODO: Find way to emulate fixedwidth
-  (set-fontset-font "fontset-default"
-                    '(#xAC00 . #xD7A3)
-                    (font-spec
+  (let ((hangulfont (font-spec
                      :family "Noto Sans CJK KR"
                      :weight 'normal
                      :width 'normal))
+        (emojifont (font-spec
+                    :family "Noto Emoji"
+                    :weight 'normal
+                    :width 'normal)))
+    ;; Hangul
+    ;; Hangul Syllables
+    (set-fontset-font "fontset-default"
+                      '(#xAC00 . #xD7A3)
+                      hangulfont)
+    ;; Hangul Jamo
+    (set-fontset-font "fontset-default"
+                      '(#x1100 . #x11FF)
+                      hangulfont)
+    ;; Hangul Compatibility Jamo
+    (set-fontset-font "fontset-default"
+                      '(#x3130 . #x318F)
+                      hangulfont)
+    ;; Hangul Jamo Extended-A
+    (set-fontset-font "fontset-default"
+                      '(#xA960 . #xA97F)
+                      hangulfont)
+    ;; Hangul Jamo Extended-B
+    (set-fontset-font "fontset-default"
+                      '(#xD7B0 . #xD7FF)
+                      hangulfont)
 
-  (let ((emojifont (font-spec
-                   :family "Noto Emoji"
-                   :weight: 'normal
-                   :width 'normal)))
+    ;; Emojies
     ;; Miscellaneous Symbols and Pictographs block
     (set-fontset-font "fontset-default"
                       '(#x1F300 . #x1F5FF)
@@ -95,7 +114,8 @@ Each entry is either:
     ;; Dingbats block
     (set-fontset-font "fontset-default"
                       '(#x2700 . #x27FF)
-                      emojifont))
+                      emojifont)
+    )
   )
 
 ;;; packages.el ends here
