@@ -64,6 +64,11 @@ Each entry is either:
     (interactive)
     (message (format "%s" (with-current-buffer (window-buffer (minibuffer-selected-window)) major-mode)))
     )
+  (defun reload-major-mode ()
+    "Reload major mode of current buffer"
+    (interactive)
+    (with-current-buffer (window-buffer (minibuffer-selected-window)) (funcall major-mode))
+    )
   )
 
 ;;; packages.el ends here
