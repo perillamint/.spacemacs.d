@@ -43,3 +43,4 @@ tramp
 
 # Credential files
 /twittering-mode.gpg
+/custom.el
