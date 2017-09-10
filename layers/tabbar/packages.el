@@ -97,6 +97,7 @@ That is, a string used to represent it on the tab bar."
         ((eq major-mode 'dired-mode) "dired")
         ((eq major-mode 'html-mode) "web")
         ((eq major-mode 'css-mode) "web")
+        ((eq major-mode 'scss-mode) "web")
         ((eq major-mode 'vue-mode) "web")
         ((eq major-mode 'vue-html-mode) "web")
         ((eq major-mode 'javascript-mode) "web")
