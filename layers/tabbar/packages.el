@@ -106,6 +106,8 @@ That is, a string used to represent it on the tab bar."
         ((eq major-mode 'rust-mode) "rust")
         ((eq major-mode 'text-mode) "text")
         ((eq major-mode 'markdown-mode) "text")
+        ((eq major-mode 'c-mode) "c")
+        ((eq major-mode 'makefile-gmake-mode) "c")
         (t "others")))
       )
     )
