@@ -108,6 +108,8 @@ That is, a string used to represent it on the tab bar."
         ((eq major-mode 'markdown-mode) "text")
         ((eq major-mode 'c-mode) "c")
         ((eq major-mode 'c++-mode) "c")
+        ((eq major-mode 'elixir-mode) "erlang")
+        ((eq major-mode 'erlang-mode) "erlang")
         ((eq major-mode 'makefile-gmake-mode) "c")
         (t "others")))
       )
