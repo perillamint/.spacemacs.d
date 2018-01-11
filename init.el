@@ -375,6 +375,8 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq tramp-copy-size-limit nil)
+  (setq flycheck-disabled-checkers '(javascript-jshint))
+  (setq js2-strict-trailing-comma-warning nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
