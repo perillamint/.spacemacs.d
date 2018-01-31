@@ -377,6 +377,7 @@ before packages are loaded."
   (setq tramp-copy-size-limit nil)
   (setq flycheck-disabled-checkers '(javascript-jshint))
   (setq js2-strict-trailing-comma-warning nil)
+  (setq js-switch-indent-offset 4)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
