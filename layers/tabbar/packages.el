@@ -103,6 +103,7 @@ That is, a string used to represent it on the tab bar."
         ((eq major-mode 'javascript-mode) "web")
         ((eq major-mode 'js-mode) "web")
         ((eq major-mode 'js2-mode) "web")
+        ((eq major-mode 'web-mode) "web")
         ((eq major-mode 'rust-mode) "rust")
         ((eq major-mode 'text-mode) "text")
         ((eq major-mode 'markdown-mode) "text")
