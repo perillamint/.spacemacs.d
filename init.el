@@ -55,6 +55,7 @@ This function should only modify configuration layer settings."
      version-control
      emacs-lisp
      neotree
+     haskell
      python
      lua
      html
