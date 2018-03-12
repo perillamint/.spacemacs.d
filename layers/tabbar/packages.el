@@ -92,6 +92,7 @@ That is, a string used to represent it on the tab bar."
       (list
        (cond
         ((string-equal "*" (substring (buffer-name) 0 1)) "emacs")
+        ((string-equal " *" (substring (buffer-name) 0 2)) "emacs")
         ((eq major-mode 'emacs-lisp-byte-code-mode) "emacs")
         ((eq major-mode 'emacs-lisp-mode) "emacs")
         ((eq major-mode 'dired-mode) "dired")
@@ -111,6 +112,7 @@ That is, a string used to represent it on the tab bar."
         ((eq major-mode 'c++-mode) "c")
         ((eq major-mode 'elixir-mode) "erlang")
         ((eq major-mode 'erlang-mode) "erlang")
+	((eq major-mode 'haskell-mode) "haskell")
         ((eq major-mode 'makefile-gmake-mode) "c")
         (t "others")))
       )
