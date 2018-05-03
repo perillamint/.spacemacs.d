@@ -66,6 +66,8 @@ This function should only modify configuration layer settings."
      erlang
      typescript
      javascript
+     java
+     kotlin
      yaml
      vue
      nginx
