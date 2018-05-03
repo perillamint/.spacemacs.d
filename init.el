@@ -384,6 +384,8 @@ before packages are loaded."
   (setq flycheck-disabled-checkers '(javascript-jshint))
   (setq js2-strict-trailing-comma-warning nil)
   (setq js-switch-indent-offset 4)
+  (setq c-default-style "linux"
+        c-basic-offset 4)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
