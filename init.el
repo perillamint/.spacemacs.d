@@ -386,6 +386,7 @@ before packages are loaded."
   (setq js-switch-indent-offset 4)
   (setq c-default-style "linux"
         c-basic-offset 4)
+  (setq kotlin-tab-width 4)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
